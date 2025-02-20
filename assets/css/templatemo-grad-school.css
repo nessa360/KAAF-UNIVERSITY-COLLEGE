@@ -1,13 +1,5 @@
-/*
-    
-TemplateMo 557 Grad School
 
-https://templatemo.com/tm-557-grad-school
-
-*/
-
-
-@import url(fontawesome.css);
+@import url("fontawesome.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 body {
     font-family: 'Montserrat', sans-serif;
@@ -289,11 +281,14 @@ a.menu-link { display: none; }
 
 /* Slider */
 
-.main-banner {
-  position: relative;
-  max-height: 100%;
-  overflow: hidden;
-  margin-bottom: -7px;
+.banner-heading {
+  color: white;
+  font-weight: 300;
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  padding: 0 20px;
+  line-height: 1.5;
+  font-size: 2rem;
 }
 
 #bg-video {
@@ -352,27 +347,30 @@ a.menu-link { display: none; }
   font-size: 22px;
 }
 
-@media screen and (max-width: 1180px) {
-
-  .main-banner .caption h6 {
-    font-weight: 500;
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .banner-heading {
+      font-size: 1.25rem;
+      padding: 0 15px;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
   }
-
-  .main-banner .caption h2 {
-    font-size: 58px;
-  }
-
 }
-@media screen and (max-width: 767px) {
 
-  .main-banner .caption h6 {
-    font-weight: 500;
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .banner-heading {
+      font-size: 1.75rem;
+      padding: 0 30px;
   }
+}
 
-  .main-banner .caption h2 {
-    font-size: 36px;
+/* Ensure the text container doesn't get too wide on very large screens */
+@media screen and (min-width: 1400px) {
+  .banner-heading {
+      max-width: 1400px;
+      font-size: 2.25rem;
   }
-
 }
 
 
